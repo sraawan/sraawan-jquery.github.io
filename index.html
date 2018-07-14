@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="jq1.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <script src="jquery-3.3.1.min.js" ></script>
+    <script src="jquery-ui.min.js"></script>
+</head>
+
+<body>
+    
+    <nav>
+        <div>
+          <i class="fa fa-bars"></i>
+            </div>
+        <ul>
+          <li><a href="#">Home</a></li>    
+          <li><a href="#">Product1</a>
+               <ul>
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+                         
+              </ul>
+            </li>
+          <li><a href="#">Product2</a>
+               <ul>
+                <li><a href="#">Item1</a></li>
+                <li><a href="#">Item2</a></li>
+                <li><a href="#">Item3</a></li>
+                          
+              </ul>
+            </li>
+          
+          <li><a href="#" id ="cl">About</a></li>
+                
+        </ul>
+      </nav>
+     <div id="abo" style="display: none">
+        <div class="abou">         
+         <h3>About Me</h3>
+         <p>worked as oracle apps developer now i trying to learn angularjs to shift the technology so that i can earn more and learn more </p><br>
+        </div>
+    <div class="tools">
+         <h3>Tools I know</h3>
+        <P>Sql,plsql,SqlLoader,html,Css</P>
+        </div>
+    </div>
+    <div id="para">
+        <div class ="img1">
+        <img src="AADHAAR.jpg" width="250" height="200" >
+        
+        </div>
+        <div class="para1">
+      <p>The use of Aadhaar Card is desirable but not a must to avail benefits under the Ayushman Bharat —National Health Protection Mission, the Union Health Ministry said on Thursday.</p>
+        </div>
+    </div>  
+    
+    <div id="para2">
+        <div class ="img2">
+        <img src="apple.jpg" width="250" height="200" >        
+        </div>
+        <div class="para3">
+            <h4>Apple is helping bring education to girls in Brazil</h4>       
+      <p>Apple's army of student coders are going to help Malala Yousafzai's mission to educate girls around the world.</p>
+            <a href="#" id="Read">Read More....</a>
+        </div>
+        <div id="read2" style="display: none">
+        <div class="rp">
+         
+         <h3>Forty students learning how to code in a classroom on the third floor of Pontifical Catholic University in downtown Rio de Janierio got an unusual assignment Friday: Nobel Prize winner Malala Yousafzai stopped by to ask if they might help her ensure girls around the world have access to quality education.</h3>
+            <img class="img4" src="apple.jpg" width="500" height="300">
+         <p>She challenged the students to create the digital tools needed to help the Malala Fund reach young women throughout Brazil. The students readily agreed, joining 460 classmates at nine other developer academies Apple runs throughout Brazil in honing their skills by tackling real-world problems.<br>
+
+The program is but one example of big tech companies lending their profits, products and profile to non-profit causes. Apple announced its partnership with the Malala Fund earlier this year after CEO Tim Cook met Yousafzai at Oxford University and the two "hit it off," said Lisa Jackson, Apple's VP of social initiatives.<br>
+
+Yousafzai is a Pakistani activist who at 17 became the youngest person to win a Nobel prize. She gained international attention after Taliban soliders shot her in the head because of her efforts to improve educational opportunities for young women. She started her eponymous fund four years ago. </p><br>
+        </div>
+    
+    </div>
+    </div>
+ 
+
+        
+    <script>
+        $("nav div").click(function() {
+            $("ul").slideToggle();
+            $("ul ul").css("display", "none");
+      });
+        $("ul li").click(function() {
+            $("ul ul").slideUp();
+            $(this).find('ul').slideToggle();
+      });
+        $(window).resize(function() {
+            if($(window).width() > 768) {
+                  $("ul").removeAttr('style');
+            }
+      });
+     $(function(){
+         $("#read2").dialog({
+             //width:30px,
+             autoOpen: false,
+             position: {
+                  my: " center",
+                  at: " center"
+             },
+             buttons: {
+                  OK: function() {$(this).dialog("close")
+                                 }
+             }
+         });
+         
+         
+         $("#Read").click(function(){
+            
+           $("#read2").dialog('open');
+                 
+       });
+         });
+         
+                $("#cl").click(function(){
+            $("#abo").toggle(500);
+            //$( "#display" ).ide(5000);
+            
+        });
+     
+        
+    
+    </script>
+</body>
+</html>

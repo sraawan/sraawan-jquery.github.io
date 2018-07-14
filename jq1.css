@@ -1,0 +1,193 @@
+html {
+      font-family: "Poppins";
+}
+
+body {
+      margin: 0;
+      padding: 0;
+}
+
+ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      background: #e3e3e3;
+      position: relative;
+      text-align: center;
+}
+
+ul li {
+      display: inline-block;
+      
+}
+
+ul li a {
+      color: #292929;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+}
+
+ul li:hover {
+      background: lightgrey;
+}
+
+ul ul {
+      position: absolute;
+      min-width: 200px;
+      background: lightgrey;
+      display: none;
+    
+}
+
+ul ul li {
+      display: block;
+      background: #e3e3e3;
+}
+
+ul li:hover ul {
+      display: block;
+}
+
+ul li i {
+      color: #292929;
+      float: right;
+      padding-left: 20px;
+}
+nav div {
+      background: lightgrey;
+      color: #292929;
+      font-size: 24px;
+      padding: 0.6em;
+      cursor: pointer;
+      display: none;
+}
+
+#para{
+    display:flex;
+    flex-direction:row;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    
+    
+}
+.img1 img{
+    border-radius:50px;
+    box-shadow: 100px;
+    
+}
+.para1 {
+    border: 1px sloid black;
+    width: 90%;
+    height: 60px;
+    align-content: center;
+    margin-top: 50px;
+    
+
+    
+}
+.para1 p{
+ border: 1px sloid black;
+    padding-left: 9px;
+}
+
+
+#para2{
+    display:flex;
+    flex-direction:row;
+    margin-left:10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    align-items: flex-start;
+    
+    
+}
+.img{
+   
+}
+.img2 img{
+    border-radius:50px;
+    box-shadow: 100px;
+     
+    
+    
+}
+
+.para3 {
+    border: 1px sloid black;
+    width: 90%;
+    height: 60px;
+    align-content: center;
+    margin-top: 50px;
+    
+}
+.para3 h4{
+     padding-left: 9px;
+}
+.para3 p{
+ border: 1px sloid black;
+     order: 1;
+     padding-left: 9px;
+}
+
+#abo{
+    display: flex;
+    margin-left: 50%;    
+    align-content: center;
+    background: lightgray;
+    width:50%;  
+    border-radius: 40px;
+   
+}
+
+.abou{
+    padding-top: 4px;
+    width: 90%;
+    padding-left: 30px;
+}
+
+.tools{
+    padding-top: 4px;
+    width: 90%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    
+}
+#read2{
+    background: lightgray;
+    width: 300%
+    
+}
+.rp{
+    width: 200%;
+     background: lightgray;
+     padding: 6%;
+}
+@media(max-width: 768px) {
+     nav div {
+            display: block;
+      }
+    
+    ul {
+            //display: none;
+            position: static;
+            background: #e3e3e3;
+    }
+    ul li {
+            display: block;
+      }
+    ul ul {
+            position: static;
+            background: #e3e3e3;
+      }
+    
+    .rp{
+    width: 200%;
+    background: lightgray;
+    padding: 6%;
+}
+
+}
+
+
